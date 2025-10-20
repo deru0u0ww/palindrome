@@ -10,6 +10,7 @@ body {
     margin:0;
     padding: 0;
 }
+p { margin:0;}
 .area {
     text-align: center;
 }
@@ -73,16 +74,23 @@ body {
     color: #FE0D0D;
     opacity: 0;
 }
+.form__alert.is-show {
+    opacity: 1;
+}
 .result, .history {
-    margin-top: 3rem;
+    margin: 3rem 0 0 2rem;
     text-align : left;
 }
+
 .result__judge {
     text-align: center;
     font-weight: bold;
     font-size: 1.4rem;
-    margin: 0;
+    margin-top: 3rem;
     opacity: 0;
+}
+.result__judge.is-show {
+    opacity: 1;
 }
 
 .history__title {

@@ -1,35 +1,108 @@
 body {
+    background-color: #082752;
+    color: #fff;
+    font-family:  'Osaka', "Itim","Note Sans JP", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-size: 16px;
-    background-color: #082752;
-    color: #ddd;
-    margin: 0;
+    margin:0;
     padding: 0;
-    
 }
-p {
-    margin: 0;
+.area {
+    text-align: center;
 }
-button,input {
-    border: solid #fff 0.1rem;
-    background-color: #082752;
-    color: #ddd;
-}
-input::placeholder {
-    color: #ddd;
-}
-.value {
-    font-size: 1.2rem;
-    padding: .4rem .6rem;
-    border-radius: .4rem;
-}
-.alert {
-    border-color: red;
-    color: red;
-}
-.btn {
-    padding: .6em;
-    border-radius: .4rem;
-}
-.history {
+.app__title {
     display: inline-block;
+    font-size: 1.8rem;
+    margin-bottom:0.5rem;
+    letter-spacing: 0.4rem;
+}
+.app__question-btn {
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    color: #082752;
+    cursor: pointer;
+}
+.app__desc {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+.form {
+    text-align: center;
+}
+.form__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;;
+}
+.form__input-wrap {
+    position: relative;
+    width: 90%;
+}
+.form__input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.form__count {
+    position: absolute;
+    bottom: -1.6rem;
+    right: 8px;
+    font-size: 0.75rem;
+    color: #aaa;
+    pointer-events: none;
+}
+.form__btn {
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    color: #082752;
+    font-size: 1rem;
+}
+.form__alert {
+    color: #FE0D0D;
+    opacity: 0;
+}
+.result, .history {
+    margin-top: 3rem;
+    text-align : left;
+}
+.result__judge {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 0;
+    opacity: 0;
+}
+
+.history__title {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.history__title:before,.history__title:after {
+    border-top: solid 0.1rem;
+    margin: 0 1rem;
+    opacity: 0.6;
+    content: "";
+    width: 8rem;
+}
+.history:before {
+    margin-right: 1rem;
+}
+.history:after {
+    margin-left: 1rem;
 }

@@ -10,7 +10,6 @@ body {
     margin:0;
     padding: 0;
 }
-p { margin:0;}
 .area {
     text-align: center;
 }
@@ -73,12 +72,13 @@ p { margin:0;}
 .form__alert {
     color: #FE0D0D;
     opacity: 0;
+    margin: 0.8rem 0 0 0;
 }
 .form__alert.is-show {
     opacity: 1;
 }
 .result, .history {
-    margin: 3rem 0 0 2rem;
+    margin: 1.8rem 0 0 2rem;
     text-align : left;
 }
 
@@ -86,11 +86,13 @@ p { margin:0;}
     text-align: center;
     font-weight: bold;
     font-size: 1.4rem;
-    margin-top: 3rem;
-    opacity: 0;
+    /* margin-top: 3rem; */
 }
 .result__judge.is-show {
     opacity: 1;
+}
+.result__text {
+    margin-left: 1rem;
 }
 
 .history__title {
